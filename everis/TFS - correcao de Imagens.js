@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TFS - correcao de Imagens
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.01
 // @description  Corrige URL de imagens no TFS
 // @author       Hugo Fontoura - HFONTOUR
 // @match        *://10.174.223.159:8080/*
