@@ -14,7 +14,7 @@ var $ = window.jQuery;
 (function() {
     'use strict';
     function main(){
-
+        //Selecionar imagens do iframe e da pagina
         var imgs_iframe = $("iframe").contents().find('img');
         var imgs_page = $('img');
         var imgs = imgs_page.add(imgs_iframe);
