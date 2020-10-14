@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         TFS - correcao de Imagens
+// @name         TFS - correcoes
 // @namespace    http://tampermonkey.net/
 // @version      1.01
 // @description  Corrige URL de imagens no TFS
