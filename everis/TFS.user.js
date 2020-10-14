@@ -37,7 +37,7 @@ var $ = window.jQuery;
             if (url){
                 var popupWidth = 1000;
                 var	popupHeight = 400;
-                var sLeft = (screen.width - popupWidth) / 1.5;
+                var sLeft = (screen.width - popupWidth) / 2;
                 var	sTop = (screen.height - popupHeight) / 4;
                 window.open(url, '_blank','width=' + popupWidth + ', height=' + popupHeight + ', top=' + sTop + ', left=' + sLeft);
             }
