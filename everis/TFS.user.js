@@ -14,23 +14,26 @@ var $ = window.jQuery;
 (function() {
     'use strict';
     function main(){
-        //Selecionar imagens do iframe e da pagina
+        // Selecionar imagens do iframe e pagina
         var imgs_iframe = $("iframe").contents().find('img');
         var imgs_page = $('img');
         var imgs = imgs_page.add(imgs_iframe);
-
+        
+        // Corrigir URLs
         imgs.map(function(){
             this.setAttribute("src", this.src.replace("http://tfs:8080/", "http://10.174.223.159:8080/"));
             this.setAttribute("src", this.src.replace("http://tfs.internal.timbrasil.com.br:8080/", "http://10.174.223.159:8080/"));
         });
-
+    
+        // Alterar ponteiro do mouse
         imgs.hover(function() {
             $(this).css('cursor','pointer');
         }, function() {
             $(this).css('cursor','auto');
         });
 
-        imgs.click( function(){
+        // Criar popup da imagem
+        imgs.click( function() {
             //alert($(this).attr("src"));
 
             var url = $(this).attr("src");
